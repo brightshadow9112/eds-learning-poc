@@ -33,6 +33,10 @@
             {
               "name": "Highlight",
               "value": "highlight"
+            },
+            {
+              "name": "Highlight Dark",
+              "value": "highlight-dark"
             }
           ]
         }
@@ -50,7 +54,8 @@
         "hero",
         "cards",
         "columns",
-        "fragment"
+        "fragment",
+        "text-with-link"
       ]
     }
   ]
