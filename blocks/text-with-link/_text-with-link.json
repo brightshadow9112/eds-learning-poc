@@ -1,0 +1,19 @@
+{
+    "id": "text-with-link",
+    "title": "Text with link",
+    "resourceType": "core/franklin/components/text/v1/text",
+
+    "fields": [
+        {
+            "name": "text",
+            "type": "richtext",
+            "label": "Text",
+            "features" : [
+                "bold",
+                "italic",
+                "underline",
+                "link"
+            ]
+        }
+    ]
+}

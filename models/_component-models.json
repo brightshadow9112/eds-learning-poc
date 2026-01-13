@@ -19,5 +19,8 @@
   },
   {
     "...": "../blocks/*/_*.json#/models"
+  },
+  {
+    "...": "./_text-with-link.json#/models"
   }
 ]
