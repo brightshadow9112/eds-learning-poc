@@ -1,19 +1,40 @@
 {
-    "id": "text-with-link",
-    "title": "Text with link",
-    "resourceType": "core/franklin/components/text/v1/text",
-
-    "fields": [
-        {
-            "name": "text",
-            "type": "richtext",
-            "label": "Text",
-            "features" : [
-                "bold",
-                "italic",
-                "underline",
-                "link"
-            ]
+  "definitions": [
+    {
+      "title": "Text with Link",
+      "id": "text-with-link",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/text/v1/text",
+            "template": {
+              "name": "Text with Link",
+              "model": "text-with-link"
+            }
+          }
         }
-    ]
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "text-with-link",
+      "fields": [
+        {
+          "component": "richtext",
+          "name": "text",
+          "value": "",
+          "label": "Text",
+          "valueType": "string",
+          "features": [
+            "bold",
+            "italic",
+            "underline",
+            "link"
+          ]
+        }
+      ]
+    }
+  ],
+  "filters": []
 }
