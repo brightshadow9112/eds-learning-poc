@@ -158,14 +158,14 @@
           }
         },
         {
-          "title": "text-with-link",
+          "title": "Text with Link",
           "id": "text-with-link",
           "plugins": {
             "xwalk": {
               "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
+                "resourceType": "core/franklin/components/text/v1/text",
                 "template": {
-                  "name": "text-with-link",
+                  "name": "Text with Link",
                   "model": "text-with-link"
                 }
               }

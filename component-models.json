@@ -214,5 +214,23 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "text-with-link",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string",
+        "features": [
+          "bold",
+          "italic",
+          "underline",
+          "link"
+        ]
+      }
+    ]
   }
 ]
