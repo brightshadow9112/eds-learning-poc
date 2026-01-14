@@ -32,6 +32,23 @@
             "underline",
             "link"
           ]
+        },
+        {
+          "component": "select",
+          "name": "variant",
+          "label": "Style Variant",
+          "valueType": "string",
+          "options": [
+            {
+              "label": "Default",
+              "value": "default"
+            },
+            {
+              "label": "With Icon",
+              "value": "with-icon"
+            }
+          ],
+          "defaultValue": "default"
         }
       ]
     }
