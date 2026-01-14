@@ -32,6 +32,20 @@
             "underline",
             "link"
           ]
+        },
+        {
+          "component": "boolean",
+          "name": "showIcon",
+          "value": false,
+          "label": "Show Icon",
+          "valueType": "boolean"
+        },
+        {
+          "component": "boolean",
+          "name": "openInNewTab",
+          "value": false,
+          "label": "Open Links in New Tab",
+          "valueType": "boolean"
         }
       ]
     }
