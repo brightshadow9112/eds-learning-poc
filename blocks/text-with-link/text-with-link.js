@@ -1,7 +1,25 @@
 export default function decorate(block) {
-  // Get component configuration from the block's data attributes or model
-  const variant = block.dataset.variant || 'default';
-  const openInNewTab = block.dataset.openInNewTab === 'true';
+  // Get the component model data from the block
+  const rows = Array.from(block.children);
+  let variant = 'default';
+  let openInNewTab = false;
+  
+  // Parse the block data - EDS stores model data in the block rows
+  rows.forEach(row => {
+    const cells = Array.from(row.children);
+    if (cells.length >= 2) {
+      const key = cells[0].textContent.trim().toLowerCase();
+      const value = cells[1].textContent.trim();
+      
+      if (key === 'variant') {
+        variant = value;
+        row.remove(); // Remove the config row
+      } else if (key === 'openinnewtab') {
+        openInNewTab = value === 'true';
+        row.remove(); // Remove the config row
+      }
+    }
+  });
   
   // Add variant classes
   if (variant && variant !== 'default') {

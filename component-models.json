@@ -230,6 +230,30 @@
           "underline",
           "link"
         ]
+      },
+      {
+        "component": "select",
+        "name": "variant",
+        "value": "default",
+        "label": "Style Variant",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": "default"
+          },
+          {
+            "name": "With Icon",
+            "value": "with-icon"
+          }
+        ]
+      },
+      {
+        "component": "boolean",
+        "name": "openInNewTab",
+        "value": false,
+        "label": "Open Links in New Tab",
+        "valueType": "boolean"
       }
     ]
   }
