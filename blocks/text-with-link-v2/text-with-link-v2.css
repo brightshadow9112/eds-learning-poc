@@ -83,21 +83,3 @@
   opacity: 1;
   transform: scale(1.1);
 }
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .text-with-link-v2 a.text-link-v2 {
-    font-size: 16px;
-    padding: 0.2rem 0.4rem;
-  }
-  
-  .text-with-link-v2 a.text-link-v2 .link-icon {
-    width: 16px;
-    height: 16px;
-  }
-  
-  .text-with-link-v2 a.text-link-v2 .external-icon {
-    width: 14px;
-    height: 14px;
-  }
-}
