@@ -55,7 +55,8 @@
         "cards",
         "columns",
         "fragment",
-        "text-with-link"
+        "text-with-link",
+        "text-with-link-v2"
       ]
     }
   ]

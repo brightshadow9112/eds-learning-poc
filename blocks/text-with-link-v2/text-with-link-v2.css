@@ -1,0 +1,103 @@
+/* Base text-with-link-v2 styles */
+.text-with-link-v2 {
+  padding: 1rem 0;
+}
+
+.text-with-link-v2 a.text-link-v2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2563eb;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+}
+
+.text-with-link-v2 a.text-link-v2:hover {
+  color: #1d4ed8;
+  background-color: #eff6ff;
+  transform: translateY(-1px);
+}
+
+/* With Icon variant */
+.text-with-link-v2.with-icon a.text-link-v2.has-icon {
+  padding-left: 0.75rem;
+}
+
+.text-with-link-v2.with-icon a.text-link-v2 .link-icon {
+  width: 18px;
+  height: 18px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+
+/* With External Icon variant */
+.text-with-link-v2.with-external-icon a.text-link-v2.has-external-icon {
+  padding-right: 0.75rem;
+}
+
+.text-with-link-v2.with-external-icon a.text-link-v2 .external-icon {
+  width: 16px;
+  height: 16px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+/* Blank target styling for any variant */
+.text-with-link-v2.blank-target a.text-link-v2[target="_blank"] {
+  position: relative;
+}
+
+.text-with-link-v2.blank-target a.text-link-v2[target="_blank"]:not(.has-external-icon)::after {
+  content: '';
+  width: 14px;
+  height: 14px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-left: 0.25rem;
+  opacity: 0.6;
+}
+
+/* Combined variant styling */
+.text-with-link-v2.with-icon.blank-target a.text-link-v2.has-icon,
+.text-with-link-v2.with-external-icon.blank-target a.text-link-v2.has-external-icon {
+  gap: 0.5rem;
+}
+
+/* Hover effects for icons */
+.text-with-link-v2 a.text-link-v2:hover .link-icon,
+.text-with-link-v2 a.text-link-v2:hover .external-icon {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .text-with-link-v2 a.text-link-v2 {
+    font-size: 16px;
+    padding: 0.2rem 0.4rem;
+  }
+  
+  .text-with-link-v2 a.text-link-v2 .link-icon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .text-with-link-v2 a.text-link-v2 .external-icon {
+    width: 14px;
+    height: 14px;
+  }
+}

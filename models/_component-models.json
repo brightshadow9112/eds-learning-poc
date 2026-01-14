@@ -22,5 +22,8 @@
   },
   {
     "...": "./_text-with-link.json#/models"
+  },
+  {
+    "...": "./_text-with-link-v2.json#/models"
   }
 ]

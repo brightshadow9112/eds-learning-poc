@@ -50,7 +50,9 @@
         "text",
         "image",
         "button",
-        "title"
+        "title",
+        "text-with-link",
+        "text-with-link-v2"
       ]
     }
   ]
