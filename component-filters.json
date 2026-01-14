@@ -16,7 +16,8 @@
       "cards",
       "columns",
       "fragment",
-      "text-with-link"
+      "text-with-link",
+      "text-with-link-v2"
     ]
   },
   {
@@ -38,7 +39,8 @@
       "image",
       "button",
       "title",
-      "text-with-link"
+      "text-with-link",
+      "text-with-link-v2"
     ]
   }
 ]
