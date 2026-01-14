@@ -36,9 +36,7 @@
         {
           "component": "select",
           "name": "variant",
-          "value": "default",
-          "label": "Style Variant", 
-          "valueType": "string",
+          "label": "Style Variant",
           "options": [
             {
               "name": "Default",
@@ -46,16 +44,14 @@
             },
             {
               "name": "With Icon",
-              "value": "with-icon"  
+              "value": "with-icon"
             }
           ]
         },
         {
           "component": "boolean",
           "name": "openInNewTab",
-          "value": false,
-          "label": "Open Links in New Tab",
-          "valueType": "boolean"
+          "label": "Open Links in New Tab"
         }
       ]
     }

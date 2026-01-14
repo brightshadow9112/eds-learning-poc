@@ -164,9 +164,7 @@
       {
         "component": "select",
         "name": "variant",
-        "value": "default",
         "label": "Style Variant",
-        "valueType": "string",
         "options": [
           {
             "name": "Default",
@@ -181,9 +179,7 @@
       {
         "component": "boolean",
         "name": "openInNewTab",
-        "value": false,
-        "label": "Open Links in New Tab",
-        "valueType": "boolean"
+        "label": "Open Links in New Tab"
       }
     ]
   },
@@ -206,9 +202,7 @@
       {
         "component": "select",
         "name": "variant",
-        "value": "default",
         "label": "Style Variant",
-        "valueType": "string",
         "options": [
           {
             "name": "Default",
@@ -227,9 +221,7 @@
       {
         "component": "boolean",
         "name": "openInNewTab",
-        "value": false,
-        "label": "Open Links in New Tab",
-        "valueType": "boolean"
+        "label": "Open Links in New Tab"
       }
     ]
   }
