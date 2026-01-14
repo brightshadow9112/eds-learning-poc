@@ -1,24 +1,7 @@
 {
-  "definitions": [
-    {
-      "title": "Text with Link",
-      "id": "text-with-link",
-      "plugins": {
-        "xwalk": {
-          "page": {
-            "resourceType": "core/franklin/components/text/v1/text",
-            "template": {
-              "name": "Text with Link",
-              "model": "text-with-link"
-            }
-          }
-        }
-      }
-    }
-  ],
   "models": [
     {
-      "id": "text-with-link",
+      "id": "text-with-link", 
       "fields": [
         {
           "component": "richtext",
@@ -28,8 +11,8 @@
           "valueType": "string",
           "features": [
             "bold",
-            "italic",
-            "underline", 
+            "italic", 
+            "underline",
             "link"
           ]
         },
@@ -37,7 +20,7 @@
           "component": "select",
           "name": "variant",
           "value": "default",
-          "label": "Style Variant",
+          "label": "Style Variant", 
           "valueType": "string",
           "options": [
             {
@@ -45,17 +28,10 @@
               "value": "default"
             },
             {
-              "name": "With Icon", 
-              "value": "with-icon"
+              "name": "With Icon",
+              "value": "with-icon"  
             }
           ]
-        },
-        {
-          "component": "boolean",
-          "name": "openInNewTab",
-          "value": false,
-          "label": "Open Links in New Tab",
-          "valueType": "boolean"
         }
       ]
     }
