@@ -201,7 +201,7 @@
       },
       {
         "component": "select",
-        "name": "variant",
+        "name": "styleVariant",
         "label": "Style Variant",
         "options": [
           {
@@ -217,11 +217,6 @@
             "value": "with-external-icon"
           }
         ]
-      },
-      {
-        "component": "boolean",
-        "name": "openInNewTab",
-        "label": "Open Links in New Tab"
       }
     ]
   }
