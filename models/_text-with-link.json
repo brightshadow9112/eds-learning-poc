@@ -1,4 +1,21 @@
 {
+  "definitions": [
+    {
+      "title": "Text with Link",
+      "id": "text-with-link",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/text/v1/text",
+            "template": {
+              "name": "Text with Link",
+              "model": "text-with-link"
+            }
+          }
+        }
+      }
+    }
+  ],
   "models": [
     {
       "id": "text-with-link", 
@@ -32,6 +49,13 @@
               "value": "with-icon"  
             }
           ]
+        },
+        {
+          "component": "boolean",
+          "name": "openInNewTab",
+          "value": false,
+          "label": "Open Links in New Tab",
+          "valueType": "boolean"
         }
       ]
     }
